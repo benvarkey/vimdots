@@ -24,6 +24,8 @@ imap jj <ESC>
 set laststatus=2  " Always show status line
 "set updatetime=500
 hi Pmenu cterm=NONE ctermbg=grey
+" Highlight background
+hi Search cterm=NONE ctermbg=LightCyan
 
 " Cursor customization
 se cursorline
