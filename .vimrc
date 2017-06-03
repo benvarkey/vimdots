@@ -66,10 +66,13 @@ nnoremap - :split<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " YouCompleteMe
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nnoremap <leader>yg :YcmCompleter GoTo
-nnoremap <leader>yd :YcmCompleter GetDoc
-nnoremap <leader>yf :YcmCompleter FixIt
-nnoremap <leader>yt :YcmCompleter GetType
+nnoremap <leader>yg :YcmCompleter GoTo<CR>
+nnoremap <leader>yd :YcmCompleter GetDoc<CR>
+nnoremap <leader>yf :YcmCompleter FixIt<CR>
+nnoremap <leader>yt :YcmCompleter GetType<CR>
+
+let g:ycm_autoclose_preview_window_after_completion = 0
+let g:ycm_autoclose_preview_window_after_insertion = 1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " vim-airline
