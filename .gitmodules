@@ -1,54 +1,57 @@
-[submodule "bundle/vim-pathogen"]
-	path = bundle/vim-pathogen
-	url = https://github.com/tpope/vim-pathogen.git
 [submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
+	path = pack/plugins/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
 [submodule "bundle/vim-airline"]
-	path = bundle/vim-airline
+	path = pack/plugins/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
 [submodule "bundle/ctrlp.vim"]
-	path = bundle/ctrlp.vim
+	path = pack/plugins/start/ctrlp.vim
 	url = https://github.com/ctrlpvim/ctrlp.vim.git
 [submodule "bundle/vim-easymotion"]
-	path = bundle/vim-easymotion
+	path = pack/plugins/start/vim-easymotion
 	url = https://github.com/easymotion/vim-easymotion.git
 [submodule "bundle/vim-airline-themes"]
-	path = bundle/vim-airline-themes
+	path = pack/plugins/start/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes.git
 [submodule "bundle/vim-minimap"]
-	path = bundle/vim-minimap
+	path = pack/plugins/start/vim-minimap
 	url = https://github.com/severin-lemaignan/vim-minimap.git
 [submodule "bundle/ack.vim"]
-	path = bundle/ack.vim
+	path = pack/plugins/start/ack.vim
 	url = https://github.com/mileszs/ack.vim.git
 [submodule "bundle/vim-fugitive"]
-	path = bundle/vim-fugitive
+	path = pack/plugins/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
 [submodule "bundle/vim-gitgutter"]
-	path = bundle/vim-gitgutter
+	path = pack/plugins/start/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
 [submodule "bundle/YouCompleteMe"]
-	path = bundle/YouCompleteMe
+	path = pack/plugins/start/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
 [submodule "bundle/syntastic"]
-	path = bundle/syntastic
+	path = pack/plugins/start/syntastic
 	url = https://github.com/vim-syntastic/syntastic.git
 [submodule "bundle/jedi-vim"]
-	path = bundle/jedi-vim
+	path = pack/plugins/start/jedi-vim
 	url = https://github.com/davidhalter/jedi-vim.git
 [submodule "bundle/indentLine"]
-	path = bundle/indentLine
+	path = pack/plugins/start/indentLine
 	url = https://github.com/Yggdroot/indentLine.git
 [submodule "bundle/vim-buffergator"]
-	path = bundle/vim-buffergator
+	path = pack/plugins/start/vim-buffergator
 	url = https://github.com/jeetsukumaran/vim-buffergator.git
 [submodule "bundle/vim-indexed-search"]
-	path = bundle/vim-indexed-search
+	path = pack/plugins/start/vim-indexed-search
 	url = https://github.com/henrik/vim-indexed-search.git
 [submodule "bundle/vim-multiple-cursors"]
-	path = bundle/vim-multiple-cursors
+	path = pack/plugins/start/vim-multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors.git
 [submodule "bundle/tagbar"]
-	path = bundle/tagbar
+	path = pack/plugins/start/tagbar
 	url = https://github.com/majutsushi/tagbar.git
+[submodule "bundle/vim-clang-format"]
+	path = pack/plugins/start/vim-clang-format
+	url = https://github.com/rhysd/vim-clang-format.git
+[submodule "bundle/fzf.vim"]
+	path = pack/plugins/start/fzf.vim
+	url = https://github.com/junegunn/fzf.vim.git

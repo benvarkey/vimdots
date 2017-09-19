@@ -1,7 +1,3 @@
-" Load Pathogen
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-execute pathogen#infect()
-
 set encoding=utf-8  " Unicode as default
 
 " Enable syntax support
@@ -59,9 +55,26 @@ se smartcase  " except when search pattern has caps
 se gdefault  " use /.../g by default
 nnoremap <leader><space> :noh<cr>
 
+" vsplit and split shortcuts
+nnoremap \| :vsplit<CR>
+nnoremap - :split<CR>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin customizations
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" YouCompleteMe
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <leader>yg :YcmCompleter GoTo<CR>
+nnoremap <leader>yd :YcmCompleter GetDoc<CR>
+nnoremap <leader>yf :YcmCompleter FixIt<CR>
+nnoremap <leader>yt :YcmCompleter GetType<CR>
+
+let g:ycm_autoclose_preview_window_after_completion = 0
+let g:ycm_autoclose_preview_window_after_insertion = 1
+
+let g:ycm_collect_identifiers_from_tags_files = 1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " vim-airline
@@ -88,11 +101,6 @@ let NERDTreeIgnore = ['\.pyc$','\.pyo','\.o$']
 " EasyMotion
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:EasyMotion_smartcase = 1  " Smartcase like Vim's
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" minimap
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Turn on minimap by default
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ack.vim/ag.vim
@@ -130,3 +138,22 @@ let g:indentLine_char = '│'
 let g:indentLine_enabled = 1
 let g:indentLine_leadingSpaceChar = '·'
 let g:indentLine_leadingSpaceEnabled = 1
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" clang-format
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:clang_format#code_style = "google"
+let g:clang_format#detect_style_file = 1
+"let g:clang_format#auto_format_on_insert_leave = 1
+autocmd FileType c,cpp,objc nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
+autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
+nmap <Leader>C :ClangFormatAutoToggle<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" FZF
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" If installed using git
+set rtp+=~/.fzf
+"
+" If installed using Homebrew
+set rtp+=/usr/local/opt/fzf
