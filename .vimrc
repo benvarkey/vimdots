@@ -50,8 +50,8 @@ nmap <leader>l :set list!<CR>
 set listchars=tab:»\ ,eol:¬
 
 " Page settings
-se colorcolumn=80 " Marker after column 80
-se textwidth=79  " Maximum width for breaking text
+se colorcolumn=120 " Marker after column 120
+se textwidth=120  " Maximum width for breaking text
 
 " Pattern matching
 se ignorecase  " not case sensitive
