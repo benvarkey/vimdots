@@ -46,8 +46,8 @@ nmap <leader>l :set list!<CR>
 set listchars=tab:»\ ,eol:¬
 
 " Page settings
-se colorcolumn=80 " Marker after column 80
-se textwidth=79  " Maximum width for breaking text
+se colorcolumn=120 " Marker after column 120
+se textwidth=120  " Maximum width for breaking text
 
 " Pattern matching
 se ignorecase  " not case sensitive
@@ -136,7 +136,7 @@ let g:jedi#show_call_signatures_delay = 0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:indentLine_char = '│'
 let g:indentLine_enabled = 1
-let g:indentLine_leadingSpaceChar = '•'
+let g:indentLine_leadingSpaceChar = '·'
 let g:indentLine_leadingSpaceEnabled = 1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
