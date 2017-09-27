@@ -55,3 +55,6 @@
 [submodule "bundle/fzf.vim"]
 	path = pack/plugins/start/fzf.vim
 	url = https://github.com/junegunn/fzf.vim.git
+[submodule "pack/plugins/start/tabular"]
+	path = pack/plugins/start/tabular
+	url = git@github.com:godlygeek/tabular.git
